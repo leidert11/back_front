@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="main.js" async></script>
+    <script src="app.js" defer type="module"></script>
+    <link rel="icon" type="image/png" href="./resources/logo1.jpg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <title>Reebok</title>
+  </head>
+
+  <body>
+    <ul class="circles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <!-- SIDEBAR -->
+    <section id="sidebar">
+      <a href="#" class="brand" style="display: inline-flex; align-items: center;">
+        <i class="bx icon" style="margin-right: 5px;"><img src="./resources/logo1.jpg" alt="" style="width: 24px; height: 24px;" /></i>
+        <span style="font-size: 16px;">Reebok</span>
+      </a>
+      
+
+      <ul class="side-menu">
+        <li class="divider" data-text="main">Main</li>
+        <li>
+          <a href="#"
+            ><i class="bx icon"
+              ><img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADM0lEQVR4nO2ZS2xMURjHzwyq1dDSiDTCgnqTSkjakFhIBOnOAiG1KJsiSCMRVhqJruqx8IpELKXUIzYoiUcitZB4pkEtpIg01COI90++9Ju4qXTmnLn3To+YfzKrOd9/fmfuved7XGPyyuvfElABrAYagf3AHmAHsBAYbHwWMAioAx6QXp3AAuOjgHLgZgD2BdAC7AUa9CNX5pF+/xk4AMwzvggoDQA+BmqARD9rk0Bznyt0AhiWe/K/4Y4r0G2gxGK9bGY6sAXo1tjTuaHtH2o88AP4DlRmET8B6NHNLImH0g5kvUK0hvDYmbrFzEAJOKMQa0N4TFOPp9HSuUG0K0R1yGP7C/BrwB564IluZGpIn/fqUxodnRtAhwJMCenzSX1GREfnBnBNAbLO1MAo9fgYLZ0bhCQz0coQHlXqcS9aOjcIKQRFTSE8tqrHoWjp3CAWK8SVEB7n1WNVtHRuEEsV4kM25TlQALxTj5p4KO1ArirEtv4KxQzxCWC7elyOh9Lt+K0M4VGpHg+jpXODOKkQdSE81qlHS7R0bhBrFOKZNE9ZxDdorKg2Hkr7OumU1klSZiQdYpOB0qRVvOKltYO6o0AzHGJmaUyH8UX09uOi3Q4xTRpz2PgiYI5CSbc32rK+eqMx841PAs4qmOSWsjTrhgMXdW2b8U3AWOBVpkZLehddIxl9ovFR9E5SMm1EJiiiTuOrgPsWG0n16F3GV/Gn9Z2ZYYQk6jY+ChgjXZ5CjkuzrkQT6FfZlPFJ9Ca3u7qJCxbrW1LJEJibG8o0kkwunR3wLTD7LbeIKwtM7WVSeQyYbXIpaaCAZdIV6i0i+qkzYOtxjuaToxqb0g1gOTAkzg0UAhsD1So6xjmS7uG28JVT7GDg+RI9BzYDRVFuIKEvcOSdR0pyW2wCRkb4OyXAhsCzJnqp/UoirHkxcC5g3J6LqTmwqM+LIyl/irM1GwpcV6PXwIrIiTMz1AZuOWEpyMZkXyoDA5NjIbU/2ruUpdk1eJK+vJETpSo2SnueamWRY77CJXCX/gOXjCcC2pSp0SXolgbVG08E1KcOHJegt/irHttNFOG/CkNc3Lzy+u/0G2OFKmFs1enpAAAAAElFTkSuQmCC"
+            /></i>
+            Customer <i class="bx bx-chevron-right icon-right"></i
+          ></a>
+          <ul class="side-dropdown">
+            <div class="customer-cont"></div>
+          </ul>
+        </li>
+        <li>
+          <a href="#"
+            ><i class="bx icon"
+              ><img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABQElEQVR4nO2YMU4DMRBFjaAEkRMQQZsbpOIatBElh6DclpJTINGgECroSME5kKigiCKKh7wy0hJFycROlg+ZV2ZmbL/9cgqH4DhOMcAx8EL7PAMn65LoA6/8Hm/AaanEGTBJCw6BTsYaNRlzB8BtGp8Cg5CxyA5w2fgq18DeygsViESAXaBqnOMq/hYsAPvATRr8BC5MgxsQ+QY4T6lE7oDDsAxgjD5ji8ifIFhFgii4iBh4IisAdIGHxl/lPGJtBBxl7lGzvsb5s1HCyr2yyEca7y3o6aWed2WR0X9JpBsPaLgjQ+k70ga4iBh4ImLgiYiBJyIGnogYqCWS3s2qjFqNZQNbYwEzj3+VtSYlMnPQHwdmQU0ykWX7kFnLayzERRKeiAqoJEIGwUXwx4ftuSOti6gTDCJP6PNYHK3jbBlfF0oJJl9bKvkAAAAASUVORK5CYII=" /></i
+            >Product<i class="bx bx-chevron-right icon-right"></i
+          ></a>
+          <ul class="side-dropdown">
+            <div class="product-cont"></div>
+          </ul>
+        </li>
+        <li>
+          <a href="#"
+            ><i class="bx icon"
+              ><img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB4klEQVR4nO3aPWsUQRzH8RWNaGUh+ALEQlALbdTExjqVEcFKRBALsbHxDahRRPCh8SUYsBSsTKHJSxAFK+FOG0WE4AOKH9njfzAesm4uy90s2W81MP/5zXyZndnj7oqio6NjXWA7buO9/OhjsVxjHZFb8udmHZHSuuR4kRmYjbX16xQPiPYqXla1J41kfbULy8XiRVW7FSI5Yr0iuVNsOpEiU3QimaHbkcwwrR2ZWp5O5G+wgKXk6r+Po0VbdgS78KziXXYPW9og8jQi3uE89uMgLuJD9F3KWgRHYvivUuAf/QfwDR+xM2eRKzF8paJmeG5O5yxy7X8iG8WERE4lj9bcOBm5iOzA24goz8IjHMPWcfKmfWvtxfLIlfsZT3ChlB03e6IiSc4J3MUr/E6kejjbGpEU7MHlkBJi80XbREa+xXweU6wWGR/2q3EFz1TUzMcUazmLvI7hhytqTkbNp5xFHsTwpYqa61GznLPIPnyNiIfYnfRtw7mkfyHrw44z+BExP/Embqu15Aq+s4H8Ac0VVmccwmN8Gebhe7wox7p2pyIy8jgNmWkoc0BzhU1P3HSehiduGp1IZtiMO9KP2tkiMzAXa+vVKS5/x86dG3U/ai8mO5MTvVKi1h8GOjo6ipQ/8BFQfs2w+z4AAAAASUVORK5CYII=" /></i
+            >Payment<i class="bx bx-chevron-right icon-right" ></i
+          ></a>
+          <ul class="side-dropdown">
+            <div class="payment-cont"></div>
+          </ul>
+        </li>
+        <li>
+          <a href="#"
+            ><i class="bx icon"
+              ><img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAdklEQVR4nO3TQQrDMBDFUN3/0s4FSksIxfJEb20YPsKQQywpGiJDRWSoiAwVmVyEP1sN+WBJcdeSoiEyVESGishQERkqMrkIX97ePvTw9k+vGLITDZGhIpM/O1OG7ERDZKjI5M/OlCE70RAZKiJDRWSoiAzhDBfEW4DRmg/GugAAAABJRU5ErkJggg==" /></i
+            >Order Detail<i class="bx bx-chevron-right icon-right"></i
+          ></a>
+        </li>
+      </ul>
+    </section>
+    <!-- SIDEBAR -->
+
+    <!-- NAVBAR -->
+    <section id="content">
+      <!-- NAVBAR -->
+      <nav id="navbar">
+        <i class="bx toggle-sidebar"
+          ><img
+            width="20px"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAY0lEQVR4nO3YUQ3AMAgFQGziZhZQ1DprZbCxu4R/SEPySgQAHSrXM6Gicp8JFd0NGCTnvsiasewAQIjxpztb1eDQuNubMEiK8QAwVL3guOYan9Lvbo/r9YP/yGpfVNd4gPiqCyoexJ1u76NsAAAAAElFTkSuQmCC"
+        /></i>
+        <form action="#"></form>
+
+        <span class="divider"></span>
+        <div class="profile">
+          <img
+            src="https://th.bing.com/th/id/R.1214cc6c68987d8cd09d62e08d96a824?rik=yGEmp8nggfzBaQ&pid=ImgRaw&r=0"
+            alt=""
+          />
+          <ul class="profile-link">
+            <li>
+              <a id="buttonClearToken" href="#"
+                ><i class="bx bxs-log-out-circle"></i> Logout</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- NAVBAR -->
+
+      <!-- MAIN -->
+      <div class="background"></div>
+      <main>
+        <h1>welcome</h1>
+        <ul class="breadcrumbs">
+          <li><a href="./index.html">Home</a></li>
+          <li class="divider">/</li>
+          <li><a href="#" class="active" id="point">welcome</a></li>
+        </ul>
+
+        <br />
+        <br />
+        <h3 id="statement"></h3>
+
+        <div class="input-group mb-3 justify-content-end">
+          <div class="col-auto">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Nombre del producto"
+              id="nombreProducto"
+              style="width: 90%; margin-right: 50px;"
+            />
+          </div>
+          <div class="input-group-append">
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              id="botonBuscar"
+            >
+              Buscar
+            </button>
+          </div>
+        </div>
+        
+
+        <div class="info-data">
+          <div class="card">
+            <div class="head">
+              <div class="content-api">
+                <p>welcome</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </main>
+      <!-- MAIN -->
+    </section>
+    <!-- NAVBAR -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
